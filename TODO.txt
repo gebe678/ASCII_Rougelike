@@ -1,0 +1,3 @@
+rewrite the input system into its own file
+create a logger to check for events and have the keyboard be one of those events
+in the specific classes check for the events listed
