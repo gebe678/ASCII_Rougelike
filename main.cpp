@@ -41,7 +41,7 @@ int main()
 
         display_map(map);
 
-        player.move_character();
+        player.move_character('s');
 
         gameOn = check_terminate();
     }
@@ -65,3 +65,4 @@ bool check_terminate()
 
     return true;
 }
+

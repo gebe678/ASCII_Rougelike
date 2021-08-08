@@ -51,9 +51,8 @@ void Character::add_character()
     line->at(0) = theLine;
 }
 
-void Character::move_character()
+void Character::move_character(char key)
 {
-    char key = _getch();
 
     bool atTop = false;
     bool atBottom = false;
@@ -61,10 +60,12 @@ void Character::move_character()
     if(this->yValue == 1)
     {
         atTop = true;
+        std::cout << "at the top" << std::endl;
     }
     else if(this->yValue == (int)map->size() - 2)
     {
         atBottom = true;
+        std::cout << "at the bottom" << std::endl;
     }
 
     vector<string>* above = NULL;
@@ -118,4 +119,14 @@ void Character::move_character()
 
             break;
     }
+}
+
+int Character::getX()
+{
+    return this->xValue;
+}
+
+int Character::getY()
+{
+    return this->yValue;
 }

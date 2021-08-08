@@ -31,7 +31,10 @@ class Character
 
         Character(vector<vector<string>*>* map, int xValue, int yValue, char symbol);
 
+        int getX();
+        int getY();
+
         void add_character();
-        void move_character();
+        void move_character(char key);
         
 };
